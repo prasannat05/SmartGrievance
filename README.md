@@ -10,19 +10,24 @@ SmartGrievance is a **Flask-based web application** powered by advanced **NLP (N
 🖼️ Below are the visual snapshots of SmartGrievance in action:
 
 🔐 Login Page
+
 ![Login Page](ScreenShots/Login.png)
 
 📊 Dashboard View 
+
 ![Dashboard](ScreenShots/DashBoard.png)
 
 📥 Sample Grievance CSV Upload
+
 ![Sample Grievance CSV](ScreenShots/Sample_Grievance.png)
 
-📁 Processed Grievances Table 
+📁 Processed Grievances 
+
 ![Processed Grievance Table](ScreenShots/Processed_Grievance.png)
 
-✉️ Email Acknowledgment Sample
-![Email Acknowledgment](ScreenShots/Response.jpg)
+✉️ Email Acknowledgment 
+
+![Email Acknowledgment](ScreenShots/Response.png)
 <br><br>
 
 ---
