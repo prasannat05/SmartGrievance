@@ -1,0 +1,6 @@
+flask
+transformers
+pandas
+scikit-learn
+email-validator
+torch

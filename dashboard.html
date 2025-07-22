@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3 class="mb-3">Grievance Dashboard</h3>
+<form method="post" enctype="multipart/form-data" class="mb-4">
+  <div class="row g-2">
+    <div class="col-md-6">
+      <input type="file" name="file" class="form-control" required />
+    </div>
+    <div class="col-md-3">
+      <button type="submit" class="btn btn-success w-100">Upload & Process</button>
+    </div>
+    <div class="col-md-3">
+      <a href="{{ url_for('export') }}" class="btn btn-outline-primary w-100">Export CSV</a>
+    </div>
+  </div>
+</form>
+
+{% if grievances %}
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Mail</th>
+        <th>Type</th>
+        <th>Priority</th>
+        <th>Entities</th>
+        <th>Response</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for g in grievances %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ g['Name of the student'] }}</td>
+        <td>{{ g['Mail id'] }}</td>
+        <td>{{ g['grievance_type'] }}</td>
+        <td><strong>{{ g['priority_score'] }}</strong></td>
+        <td>{{ g['entities'] }}</td>
+        <td>{{ g['automated_response'] }}</td>
+        <td><a href="{{ url_for('send_email', index=loop.index0) }}" class="btn btn-sm btn-outline-secondary">Send</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+{% endblock %}
