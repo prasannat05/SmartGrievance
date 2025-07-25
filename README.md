@@ -7,7 +7,7 @@ SmartGrievance is a **Flask-based web application** powered by advanced **NLP (N
 ---
 
 ## Screenshots
-🖼Below are the visual snapshots of SmartGrievance in action:
+Below are the visual snapshots of SmartGrievance in action:
 
 Login Page
 
