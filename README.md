@@ -1,56 +1,56 @@
-# 🧠 SmartGrievance - Intelligent Grievance Management System
+# SmartGrievance - Intelligent Grievance Management System
 
 SmartGrievance is a **Flask-based web application** powered by advanced **NLP (Natural Language Processing)** to intelligently classify, prioritize, and acknowledge student grievances submitted via CSV (from Google Forms or manual upload).
 
-> 📌 Built with modern Bootstrap UI, intelligent backend, and a responsive, table-based dashboard interface.
+> Built with modern Bootstrap UI, intelligent backend, and a responsive, table-based dashboard interface.
 
 ---
 
-## 📸 Screenshots
-🖼️ Below are the visual snapshots of SmartGrievance in action:
+## Screenshots
+🖼Below are the visual snapshots of SmartGrievance in action:
 
-🔐 Login Page
+Login Page
 
 ![Login Page](ScreenShots/Login.png)
 
-📊 Dashboard View 
+Dashboard View 
 
 ![Dashboard](ScreenShots/DashBoard.png)
 
-📥 Sample Grievance CSV Upload
+Sample Grievance CSV Upload
 
 ![Sample Grievance CSV](ScreenShots/Sample_Grievance.png)
 
-📁 Processed Grievances 
+Processed Grievances 
 
 ![Processed Grievance Table](ScreenShots/Processed_Grievance.png)
 
-✉️ Email Acknowledgment 
+Email Acknowledgment 
 
 ![Email Acknowledgment](ScreenShots/Response.png)
 <br><br>
 
 ---
 
-## 🚀 Features
+## Features
 
-- ✅ Admin Login
-- ✅ Upload grievance CSV files directly
-- ✅ NLP-based:
-  - Grievance classification (zero-shot learning)
-  - Named Entity Recognition (NER)
-  - Smart priority scoring
-- ✅ Auto-generated response per grievance
-- ✅ Email acknowledgment sender
-- ✅ Sortable table by **priority (high → low)**
-- ✅ Export processed data as new CSV
-- ✅ Super clean Bootstrap 5 UI
-- ✅ Secure credential management
-- ✅ Fully offline/local runnable
+-  Admin Login
+-  Upload grievance CSV files directly
+
+  -  Grievance classification (zero-shot learning).
+  -  Named Entity Recognition (NER)
+  -  Smart priority scoring
+-  Auto-generated response per grievance
+-  Email acknowledgment sender
+-  Sortable table by **priority (high → low)**
+-  Export processed data as new CSV
+-  Super clean Bootstrap 5 UI
+-  Secure credential management
+-  Fully offline/local runnable
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 ```
 SmartGrievance/
 │
@@ -72,16 +72,16 @@ SmartGrievance/
 
 ---
 
-## 📥 Sample CSV Format
+## Sample CSV Format
 
 You can upload any CSV file matching the below header structure. An example (`sample_grievances.csv`) is already provided.
 
-### ✅ Required Columns:
+### Required Columns:
 
 ```csv
 Timestamp,Name of the student,Register Number,Department,Mail id,Brief Statement of Grievance,Written Complaint Submitted
 ```
-🧠 How It Works (Tech Flow)
+How It Works (Tech Flow)
 
 - Admin logs in using username/password.
 - Uploads the student grievance CSV file.
@@ -103,7 +103,7 @@ Timestamp,Name of the student,Register Number,Department,Mail id,Brief Statement
 
  -  Export the processed results as a new CSV file
 
-## 🛠️ Installation
+## Installation
 
 1. Clone or Download
 ```
@@ -136,13 +136,13 @@ PASSWORD = "your_email_password"
 Then open your browser and go to:
 ``` http://localhost:5000 ```
 
-📤 Exported Files
+Exported Files
 All processed results (grievance type, NER, priority, and response) will be saved to:
 ```
 /processed/
 ```
 
-🧠 NLP Models Used
+NLP Models Used
 - Zero-Shot Classification: facebook/bart-large-mnli
 - Named Entity Recognition (NER): Babelscape/wikineural-multilingual-ner
 - Other Libraries:
@@ -155,7 +155,7 @@ sklearn
 collections
 ```
 
-✉️ Email Format Example
+Email Format Example
 ```
 Auto-generated email body sent to each student:
 
@@ -169,7 +169,7 @@ Regards,
 Admin
 ```
 
-💡 Future Enhancements
+Future Enhancements
 - Role-based dashboard (Admin, Staff, HOD)
 - Add data visualization (charts, trends)
 - SQLite/MySQL DB integration
